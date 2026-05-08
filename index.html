@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Checker — Daksh Jain</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="card">
+    <div class="logo">// Security Tool</div>
+    <h1>Password Strength</h1>
+    <p class="desc">Analyze your password security instantly — no data is stored or transmitted.</p>
+
+    <div class="input-wrap">
+      <input class="pw-input" type="password" id="pw" placeholder="Enter password…" oninput="analyze()" />
+      <button class="toggle" onclick="toggleVis()" id="eye">👁</button>
+    </div>
+
+    <div class="bars" id="bars">
+      <div class="bar b1"></div>
+      <div class="bar b2"></div>
+      <div class="bar b3"></div>
+      <div class="bar b4"></div>
+    </div>
+
+    <div class="strength-label">
+      <div class="str-text" id="str-text">— Enter Password</div>
+      <div class="str-score" id="str-score"></div>
+    </div>
+
+    <div class="criteria">
+      <div class="crit" id="c-len">  <div class="dot"></div>8+ characters</div>
+      <div class="crit" id="c-upper"><div class="dot"></div>Uppercase letter</div>
+      <div class="crit" id="c-lower"><div class="dot"></div>Lowercase letter</div>
+      <div class="crit" id="c-num">  <div class="dot"></div>Number</div>
+      <div class="crit" id="c-sym">  <div class="dot"></div>Symbol (!@#$…)</div>
+      <div class="crit" id="c-long"> <div class="dot"></div>12+ characters</div>
+    </div>
+
+    <div class="tips">
+      <div class="tips-title">💡 Quick Tips</div>
+      <div class="tip">Mix letters, numbers, and symbols</div>
+      <div class="tip">Avoid dictionary words or common phrases</div>
+      <div class="tip">Never reuse passwords across sites</div>
+      <div class="tip">Use a password manager for storage</div>
+    </div>
+
+    <button class="gen-btn" onclick="generate()">⚡ Generate Strong Password</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

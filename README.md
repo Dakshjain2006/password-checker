@@ -3,7 +3,7 @@
 Client-side-only password security analyzer — no data is ever transmitted or stored.
 
 ## 🚀 Live Demo
-[dakshjain.github.io/password-checker](https://dakshjain.github.io/password-checker)
+[Dakshjain2006.github.io/password-checker](https://Dakshjain2006.github.io/password-checker)
 
 ## ✨ Features
 - Real-time 4-tier strength: Weak / Fair / Good / Strong
